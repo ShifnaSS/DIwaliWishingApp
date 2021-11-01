@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Happy diwali</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <style>
+      .h1{
+  color: red;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 10vw;
+  position: absolute;
+  text-shadow: 4px 6px rgb(168, 166, 3);
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes example {
+  0%   {color:rgb(194, 191, 4); left:0px; top:30px;}
+  25%  {color:rgb(0, 4, 255); left:100px; top:30px;}
+  50%  { left:100px; top:300px;}
+  75%  {color:rgb(245, 45, 111); left:0px; top:300px;}
+  100% { left:0px; top:30px;}
+}
+.panel{
+  height: 800px;
+}
+input[type="text"]{
+  width: 70%;
+  line-height:2em;
+  border-radius:5px;
+  border:2px solid #f2f2f2;
+  outline:none;
+  padding-left:10px;
+}
+    </style>
+	</head>
+<body style="background-image: url(https://i.gifer.com/7yPb.gif);">
+<div class="container">
+  <div class="row" > 
+    <div class="col-md-12">  
+      <div class="panel" style="background-color: rgba(224, 221, 217, 0.863);">
+        <div class="panel-body" >
+          <!--/stories-->
+          <div class="row">  
+   
+          </div>
+          <!--/stories--> 
+          <h4 style="color: chocolate;">Your greetings send successfully to <%=name.rname%><br><br>
+          <span style="font-style: italic;color: darkmagenta; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">Copy the below link and wish <%=name.rname%> </span></h4>
+          <input type="text" value="<%=fullUrl%>" id="myInput"><button class="btn btn-primary" onclick="myFunction()" style="background-color: gold;">Copy URL</button><br>
+          <h4><br><span style="font-style: italic;color: darkmagenta; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">copy and Wish other friends </span></h4>
+          <input type="text" value="<%=normalUrl%>" id="myInput1"><button class="btn btn-primary" onclick="myFunction1()" style="background-color: gold;">Copy URL</button><br>
+          <a href="/index" class="btn btn-primary" style="background-color: gold;">Create new greeting </a> 
+          <br><br><hr>
+          <p style="color: rgb(24, 3, 51); font-family: cursive;font-size: larger;">Celebrate this <span style="color: crimson;">Deewali</span> by sending beautiful wishes and greetings to all your friends and relatives.</p>
+          <p style="text-align: center;color: darkred; font-family: cursive;font-size: larger;">"May the millions of lamps of<br><span style="color: yellow;"> Diwali </span>illuminate your life with happiness,<br>Joy,Peace and Health.Wish you and your <br>family a very prosperous<span style="color: yellow;"> Diwali </span>"</p>
+        </div>
+      </div>                                                  
+   	</div><!--/col-12-->
+  </div>
+</div>
+	<!-- script references -->
+  <script>
+    function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+  
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+function myFunction1() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput1");
+  
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+  </script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+	</body>
+</html>

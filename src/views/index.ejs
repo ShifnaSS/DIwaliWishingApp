@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Deewali</title>
+    <link href="//css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        h1{
+  color: rgb(243, 243, 236);
+  font-size:9vw;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+    </style>
+    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+</head>
+<body style="background-image:url(https://www.hindisoch.com/wp-content/uploads/2018/11/Diwali-Night-Fireworks-Beautiful-HD-Wallpaper-India.jpg)">
+    
+    <div class="flip-container login" >
+        <h1>Wishing Everyone a <span style="color:rgb(245, 229, 4);font-family: cursive;text-align: center;">Happy Diwali</span></h1> 
+        <div class="flipper login-form" id="flipper" style="background-image: url('images/2.jpg'); background-size: cover;background-repeat: no-repeat;">  
+            
+            <div class="front">
+                <h2 style="color: white;">Send your greetings to everyone</h2>
+                <form  method="post" action="/go" >
+                    <input type="text" placeholder="Name of your friend" id="rname" name="rname" required minlength="3" maxlength="8"/><br>
+                    <input type="email" placeholder="Email-ID of your friend" id="email_id" name="email_id"  required/>
+                    <br>
+                    <button class="bt" type="submit">create your Greetings</button>
+                    <!-- onclick="return valid();" -->
+                </form>
+            </div>
+            
+           
+        </div>
+        <!-- <script src="login.js"></script> -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="/js/flipping.js"></script>
+</body>
+</html>

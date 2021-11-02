@@ -16,8 +16,8 @@ function router(nav,usernav) {
                 console.log(mailing.email_id);
                 let fromMail = 'diwalihappy44@gmail.com';
                 let toMail = mailing.email_id;
-                let subject = 'HAPPY DIWALI';
-                let text = 'open URL to view the greetings ' +fullUrl;
+                let subject = 'HAPPY DIWALI' +mailing.rname;
+                let text = 'HAPPY DIWALI ' +mailing.rname+ '.May you live your life like the festival of Diwali,happy healthy and wealthy.Open URL to view the greetings ' +fullUrl+ '!.Create your own diwali greetings and send to your loved ones here->' +normalUrl;
                 
             const transporter = nodemailer.createTransport({
                 host: 'smtp.gmail.com',

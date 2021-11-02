@@ -20,7 +20,7 @@ function router(nav,usernav) {
                 let text = 'open URL to view the greetings ' +fullUrl;
                 
             const transporter = nodemailer.createTransport({
-                host: 'smtp.googlemail.com',
+                host: 'smtp.gmail.com',
                 port:465,
                 secure:true,
                 auth: {

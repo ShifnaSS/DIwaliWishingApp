@@ -20,7 +20,9 @@ function router(nav,usernav) {
                 let text = 'open URL to view the greetings ' +fullUrl;
                 
             const transporter = nodemailer.createTransport({
+
                 service: 'gmail',
+                port:587,
                 auth: {
                     user: fromMail ,
                     pass: 'coding123*'
@@ -38,6 +40,7 @@ function router(nav,usernav) {
                     if (error) {
                         console.log(error);
                     }
+                    console.log({message :"mail send",message_id:mailOptions.messageId});
                 });
             });
                 // send email

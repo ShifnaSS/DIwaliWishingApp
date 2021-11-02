@@ -14,7 +14,7 @@ function router(nav,usernav) {
     console.log(fullUrl);
             RecepeintData.findOne({_id:req.params.id}).then(function(mailing){
                 console.log(mailing.email_id);
-                let fromMail = 'diwalihappy82@gmail.com';
+                let fromMail = 'diwalihappy44@gmail.com';
                 let toMail = mailing.email_id;
                 let subject = 'HAPPY DIWALI';
                 let text = 'open URL to view the greetings ' +fullUrl;
@@ -25,7 +25,7 @@ function router(nav,usernav) {
                 secure:true,
                 auth: {
                     user: fromMail ,
-                    pass: 'coding123*'
+                    pass: 'blackandwhite'
                 }
                 });
         

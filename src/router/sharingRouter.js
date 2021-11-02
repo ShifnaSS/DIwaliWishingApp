@@ -39,19 +39,34 @@ function router(nav,usernav) {
                 transporter.sendMail(mailOptions, (error, response) => {
                     if (error) {
                         console.log(error);
+                        RecepeintData.findOne({_id:req.params.id})
+                        .then(function(name){
+                          res.render('send',{
+                         fullUrl,
+                         normalUrl,
+                         name,
+                         error
+                         });
+                         res.end();
+                        })
+                    }
+                    else
+                    {
+                        RecepeintData.findOne({_id:req.params.id})
+                        .then(function(name){
+                          res.render('send',{
+                         fullUrl,
+                         normalUrl,
+                         name,
+                         error:''
+                         });
+                         res.end();
+                        })
                     }
                 });
             });
                 // send email
-            RecepeintData.findOne({_id:req.params.id})
-            .then(function(name){
-                res.render('send',{
-                    fullUrl,
-                    normalUrl,
-                    name
-                });
-                res.end();
-            })
+            
                 
     })
     return sharingRouter;
